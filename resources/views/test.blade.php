@@ -17,7 +17,8 @@ Message: <input type="text" id="message" /><br/>
   crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
 <script>
-
+//----aks Notification allow
+Notification.requestPermission();
 	var dnperm = document.getElementById('dnperm');
 
 	dnperm.addEventListener('click',function(e){
@@ -99,7 +100,7 @@ Message: <input type="text" id="message" /><br/>
 						}
 
 		}else{
-			alert('Please allow the notification first');
+		//	alert('Please allow the notification first');
 		}
   });
 </script>
